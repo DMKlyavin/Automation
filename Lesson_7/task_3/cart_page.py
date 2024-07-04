@@ -1,8 +1,11 @@
 from selenium.webdriver.common.by import By
-from base_page import BasePage
 
 
-class CartPage(BasePage):
+class CartPage:
+    def __init__(self, browser):
+        self.browser = browser
+
     def checkout(self):
-        checkout_button = self.driver.find_element(By.ID, "checkout")
+        checkout_button = self.browser.find_element(By.ID, 'checkout')
         checkout_button.click()
+        
