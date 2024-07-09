@@ -1,6 +1,5 @@
 import requests
 
-
 class Company:
 
     def __init__(self, url):
@@ -44,8 +43,8 @@ class Company:
             "companyId": new_id,
             "email": "test@test.ru",
             "url": "string",
-            "phone": "89999999999",
-            "birthdate": "2024-06-12T18:54:13.783Z",
+            "phone": "+79101448989",
+            "birthdate": "2024-07-09T13:40:13.783Z",
             "isActive": 'true'
         }
 

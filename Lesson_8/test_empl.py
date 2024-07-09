@@ -18,12 +18,12 @@ def test_add_new_employee():
     descr = "test"
     company = api.create_company(name, descr)
     new_id = company["id"]
-    new_employee = api.add_new_employee(new_id, "Denis123", "K")
+    new_employee = api.add_new_employee(new_id, "Denis1234", "K")
     assert new_employee["id"] > 0
 
     resp = api.get_list_employee(new_id)
     assert resp[0]["companyId"] == new_id
-    assert resp[0]["firstName"] == "Denis123"
+    assert resp[0]["firstName"] == "Denis1234"
     assert resp[0]["isActive"] == True
     assert resp[0]["lastName"] == "K"
 
